@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bean Boutique</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="site-nav" aria-label="Main navigation">
+        <a class="brand" href="HomePage.html" aria-label="Bean Boutique home">
+            <img class="brand-logo" src="Images/Img-HomePage/Logo.png" alt="Bean Boutique logo">
+            <span>Bean Boutique</span>
+        </a>
+
+        <button class="menu-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Open navigation menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="33.273" height="55.489" viewBox="0 0 33.273 55.489" aria-hidden="true">
+                <g id="suzukicoffee-btn" transform="translate(9036.15 2564.094)"><g id="open" transform="translate(-9105.374 -2754.953)"><path id="open-path-1" d="M-123.626,106.18A99.982,99.982,0,0,0-109,107.328a145.294,145.294,0,0,0,16.377-1.147" transform="translate(194 137.625)" fill="none" stroke="#115740" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path id="open-path-2" d="M-114.307,115.03a9.558,9.558,0,0,1-5.732-7.685,65.281,65.281,0,0,1,0-13.18h18.863v13.18s.121,3.921-5.155,7.685" transform="translate(196.029 129.923)" fill="none" stroke="#115740" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path id="open-path-3" d="M-108.214,95.828s5.783-.03,5.863,5.545-6.053,5.546-6.053,5.546" transform="translate(203.656 130.988)" fill="none" stroke="#115740" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path id="open-path-4" d="M-112.281,97.02c3.253-1.293,4.817-6.674,2.28-8.084s-6.806-.719-8.023-3.689,2.56-3.15,4.936-2.592c2.937.228,7.479,1.489,9.474-1.87" transform="translate(197.538 121.97)" fill="none" stroke="#115740" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path id="open-path-5" d="M-117.134,79.779s8.624,1.914,13.811-.936" transform="translate(198.099 120.211)" fill="none" stroke="#115740" stroke-linecap="round" stroke-width="2"></path><path id="open-path-6" d="M-114.535,76.953a6.406,6.406,0,0,0,6.3,0" transform="translate(199.767 119)" fill="none" stroke="#115740" stroke-linecap="round" stroke-width="2"></path></g><g id="close" transform="translate(-9105.374 -2754.953)"><path id="close-path-1" d="M-123.626,106.18A99.982,99.982,0,0,0-109,107.328a145.294,145.294,0,0,0,16.377-1.147" transform="translate(194 137.625)" fill="none" stroke="#115740" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path id="close-path-2" d="M-114.307,115.03a9.558,9.558,0,0,1-5.732-7.685,65.281,65.281,0,0,1,0-13.18h18.863v13.18s.121,3.921-5.155,7.685" transform="translate(196.029 129.923)" fill="none" stroke="#115740" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path id="close-path-3" d="M-108.214,95.828s5.783-.03,5.863,5.545-6.053,5.546-6.053,5.546" transform="translate(203.656 130.988)" fill="none" stroke="#115740" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path id="close-path-4" d="M-109.467,93.994s2-3.648-.534-5.058-6.806-.719-8.023-3.689,2.56-3.15,4.936-2.592c2.937.228,3.866.961,7.264,0,2.65-1.163,4.537-4.6-1.962-7.051-2.849-1.545-4.259-2.171-6.594-5.316" transform="translate(197.538 121.97)" fill="none" stroke="#115740" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path id="close-path-5" d="M-114.641,81.086a22.056,22.056,0,0,0,11.161-8.793" transform="translate(198.099 120.211)" fill="none" stroke="#115740" stroke-linecap="round" stroke-width="2"></path></g></g>
+            </svg>
+            <span>Menu</span>
+        </button>
+
+        <div class="collapse side-menu" id="navbarNav">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="HomePage.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="CoffeeSelection.html">
+                        Coffee
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="BrewingEquipment.html">
+                        Equipment
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Events_and_Workshops.html">
+                        Events
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Special_Offers_and_Subscriptions.html">
+                        Offers
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Shopping_Cart.html">
+                        Cart
+                    </a>
+                </li>
+
+            </ul>
+
+            <div id="navbarNavIcons" class="menu-icons">
+
+                <a class="search-toggle" href="#">
+                    <i class="bi bi-search"></i>
+                </a>
+
+                <a href="#">
+                    <i class="bi bi-person"></i>
+                </a>
+
+                <a href="Shopping_Cart.html">
+                    <i class="bi bi-bag"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="announcement">Enjoy free delivery with a minimum purchase of $50</div>
+
+        <section class="hero hero-home">
+            <div class="hero-media"></div>
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <img class="hero-logo" src="Images/Img-HomePage/Logo.png" alt="Bean Boutique logo">
+                </div>
+            </div>
+        </section>
+
+        <section id="moments" class="feature-section featured-section">
+            <div class="section-header featured-header">
+                <span>Featured spotlight</span>
+                <h2>Top products and upcoming events</h2>
+                <p>Explore the most talked-about beans, workshops, and brewing gear from Bean Boutique.</p>
+            </div>
+            <div class="featured-slider" data-featured-slider>
+                <button class="featured-arrow prev" type="button" aria-label="Previous featured item">&#8249;</button>
+                <div class="featured-viewport">
+                    <article class="featured-slide active">
+                        <div class="featured-card featured-card-large">
+                            <div class="featured-media img-signature-house"></div>
+                            <div class="featured-copy">
+                                <span>Featured product</span>
+                                <h3>Signature House</h3>
+                                <p>Balanced almond, caramel, and citrus notes with a silky texture. Brew as pour-over or espresso to highlight nuances.</p>
+                                <a href="#coffee">Browse coffee collection</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="featured-slide">
+                        <div class="featured-card featured-card-large">
+                            <div class="featured-media img-latte-art-lab"></div>
+                            <div class="featured-copy">
+                                <span>Upcoming event</span>
+                                <h3>Latte Art Lab</h3>
+                                <p>Perfect your milk texture and practice latte art techniques in a relaxed, hands-on session.</p>
+                                <a href="#events">Explore events</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="featured-slide">
+                        <div class="featured-card featured-card-large">
+                            <div class="featured-media img-gooseneck-kettle"></div>
+                            <div class="featured-copy">
+                                <span>Must-have gear</span>
+                                <h3>Gooseneck Kettle</h3>
+                                <p>Precision pour control for pour-over brewing and slow, even extraction every time.</p>
+                                <a href="#equipment">Shop equipment</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <button class="featured-arrow next" type="button" aria-label="Next featured item">&#8250;</button>
+            </div>
+            <div class="featured-dots" aria-label="Featured slider pagination">
+                <button type="button" class="featured-dot active" aria-label="Show featured product"></button>
+                <button type="button" class="featured-dot" aria-label="Show upcoming event"></button>
+                <button type="button" class="featured-dot" aria-label="Show must-have gear"></button>
+            </div>
+        </section>
+
+        <section id="coffee" class="feature-section beans-section">
+            <div class="section-header">
+                <span>Our coffees</span>
+                <h2>Explore curated coffee bean selections</h2>
+            </div>
+            <div class="catalog-rows-slider" data-catalog-slider>
+                <button class="catalog-arrow prev" type="button" aria-label="Show previous coffee products">&#8249;</button>
+                <div class="catalog-rows-viewport">
+                    <div class="catalog-row active">
+                        <div class="product-grid">
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-colombian-roast"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>Colombian Roast</h2>
+                                    <div class="product-price"><span>$14.99</span></div>
+                                </a>
+                            </article>
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-espresso-blend"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>Espresso Blend</h2>
+                                    <div class="product-price"><span>$15.75</span></div>
+                                </a>
+                            </article>
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-dark-roast"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>Dark Roast</h2>
+                                    <div class="product-price"><span>$16.50</span></div>
+                                </a>
+                            </article>
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-decaf-reserve"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>Decaf Reserve</h2>
+                                    <div class="product-price"><span>$13.95</span></div>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="catalog-row">
+                        <div class="product-grid">
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-cold-brew"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>Cold Brew</h2>
+                                    <div class="product-price"><span>$14.25</span></div>
+                                </a>
+                            </article>
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-seasonal-blend"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>Seasonal Blend</h2>
+                                    <div class="product-price"><span>$15.25</span></div>
+                                </a>
+                            </article>
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-single-origin-light"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>Single Origin Light</h2>
+                                    <div class="product-price"><span>$15.00</span></div>
+                                </a>
+                            </article>
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-mocha-blend"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>Mocha Blend</h2>
+                                    <div class="product-price"><span>$15.99</span></div>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="catalog-row">
+                        <div class="product-grid">
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-french-press-roast"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>French Press Roast</h2>
+                                    <div class="product-price"><span>$16.20</span></div>
+                                </a>
+                            </article>
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-filter-bold"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>Filtered Bold</h2>
+                                    <div class="product-price"><span>$14.75</span></div>
+                                </a>
+                            </article>
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-holiday-spice"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>Holiday Spice</h2>
+                                    <div class="product-price"><span>$17.00</span></div>
+                                </a>
+                            </article>
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-signature-house"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>Signature House</h2>
+                                    <div class="product-price"><span>$16.80</span></div>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <button class="catalog-arrow next" type="button" aria-label="Show next coffee products">&#8250;</button>
+            </div>
+        </section>
+
+        <section id="events" class="feature-section events-section">
+            <div class="section-header">
+                <span>Events & Workshops</span>
+                <h2>Join our coffee community experiences</h2>
+            </div>
+            <div class="catalog-rows-slider" data-catalog-slider>
+                <button class="catalog-arrow prev" type="button" aria-label="Show previous events">&#8249;</button>
+                <div class="catalog-rows-viewport">
+                    <div class="catalog-row active">
+                        <div class="product-grid">
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="Events_and_Workshops.html#registration" class="group">
+                                        <div class="product-image img-signature-tasting-session"></div>
+                                    </a>
+                                    <a class="product-action" href="Events_and_Workshops.html#registration">Book Now</a>
+                                </div>
+                                <a href="Events_and_Workshops.html#registration">
+                                    <h2>Signature Tasting Session</h2>
+                                    <div class="product-price"><span>Aug 8, 2026 — 6:00 PM</span></div>
+                                </a>
+                            </article>
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="Events_and_Workshops.html#registration" class="group">
+                                        <div class="product-image img-brewing-masterclass"></div>
+                                    </a>
+                                    <a class="product-action" href="Events_and_Workshops.html#registration">Book Now</a>
+                                </div>
+                                <a href="Events_and_Workshops.html#registration">
+                                    <h2>Brewing Masterclass</h2>
+                                    <div class="product-price"><span>Aug 15, 2026 — 11:00 AM</span></div>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="catalog-row">
+                        <div class="product-grid">
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="Events_and_Workshops.html#registration" class="group">
+                                        <div class="product-image img-meet-the-roaster"></div>
+                                    </a>
+                                    <a class="product-action" href="Events_and_Workshops.html#registration">Book Now</a>
+                                </div>
+                                <a href="Events_and_Workshops.html#registration">
+                                    <h2>Meet the Roaster</h2>
+                                    <div class="product-price"><span>Aug 22, 2026 — 4:00 PM</span></div>
+                                </a>
+                            </article>
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="Events_and_Workshops.html#registration" class="group">
+                                        <div class="product-image img-latte-art-lab"></div>
+                                    </a>
+                                    <a class="product-action" href="Events_and_Workshops.html#registration">Book Now</a>
+                                </div>
+                                <a href="Events_and_Workshops.html#registration">
+                                    <h2>Latte Art Lab</h2>
+                                    <div class="product-price"><span>Sep 5, 2026 — 1:30 PM</span></div>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <button class="catalog-arrow next" type="button" aria-label="Show next events">&#8250;</button>
+            </div>
+        </section>
+
+        <section id="equipment" class="feature-section equipment-section">
+            <div class="section-header">
+                <span>Brewing gear</span>
+                <h2>Essential tools for perfect coffee at home</h2>
+            </div>
+            <div class="catalog-rows-slider" data-catalog-slider>
+                <button class="catalog-arrow prev" type="button" aria-label="Show previous brewing equipment">&#8249;</button>
+                <div class="catalog-rows-viewport">
+                    <div class="catalog-row active">
+                        <div class="product-grid">
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-gooseneck-kettle"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>Gooseneck Kettle</h2>
+                                    <div class="product-price"><span>$42.00</span></div>
+                                </a>
+                            </article>
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-burr-grinder"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>Burr Grinder</h2>
+                                    <div class="product-price"><span>$59.99</span></div>
+                                </a>
+                            </article>
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-french-press"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>French Press</h2>
+                                    <div class="product-price"><span>$34.50</span></div>
+                                </a>
+                            </article>
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-espresso-machine"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>Espresso Machine</h2>
+                                    <div class="product-price"><span>$299.00</span></div>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="catalog-row">
+                        <div class="product-grid">
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-pour-over-dripper"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>Pour-over Dripper</h2>
+                                    <div class="product-price"><span>$26.50</span></div>
+                                </a>
+                            </article>
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-cold-brew-jar"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>Cold Brew Jar</h2>
+                                    <div class="product-price"><span>$24.00</span></div>
+                                </a>
+                            </article>
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-milk-frother"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>Milk Frother</h2>
+                                    <div class="product-price"><span>$22.00</span></div>
+                                </a>
+                            </article>
+                            <article class="product-preview">
+                                <div class="relative group overflow-hidden">
+                                    <a href="#" class="group">
+                                        <div class="product-image img-scale-timer"></div>
+                                    </a>
+                                    <button class="product-action">Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <h2>Scale & Timer</h2>
+                                    <div class="product-price"><span>$18.75</span></div>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <button class="catalog-arrow next" type="button" aria-label="Show next brewing equipment">&#8250;</button>
+            </div>
+        </section>
+
+        <section id="community" class="feature-section widget-section">
+            <div class="section-header">
+                <span>Community buzz</span>
+                <h2>See what customers are saying and where to find us</h2>
+            </div>
+            <div class="widget-grid">
+                <div class="widget-card">
+                    <h3>Social media feed</h3>
+                    <div class="social-feed-fake" aria-label="Bean Boutique social updates">
+                        <article class="fake-post">
+                            <div class="fake-post-header">
+                                <strong>@BeanBoutique</strong>
+                                <span>2h</span>
+                            </div>
+                            <p>Freshly roasted Signature House just landed. First 20 customers get a free mini tasting cup this morning.</p>
+                            <div class="fake-post-meta"><span>34 likes</span><span>8 comments</span></div>
+                        </article>
+                        <article class="fake-post">
+                            <div class="fake-post-header">
+                                <strong>@BeanBoutique</strong>
+                                <span>Yesterday</span>
+                            </div>
+                            <p>Latte Art Lab is open for booking. Limited seats for Saturday 1:30 PM. Bring a friend and learn together.</p>
+                            <div class="fake-post-meta"><span>57 likes</span><span>15 comments</span></div>
+                        </article>
+                        <article class="fake-post">
+                            <div class="fake-post-header">
+                                <strong>@BeanBoutique</strong>
+                                <span>3 days ago</span>
+                            </div>
+                            <p>Weekend Roast subscription members: your new tasting notes card is ready in this week’s delivery box.</p>
+                            <div class="fake-post-meta"><span>41 likes</span><span>6 comments</span></div>
+                        </article>
+                        <div class="fake-feed-cta">
+                            <a href="#events">See upcoming events</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-card">
+                    <h3>Interactive map</h3>
+                    <div id="mapContainer" class="map-frame">
+                        <iframe
+                            title="Bean Boutique location on Google Maps"
+                            src="https://www.google.com/maps?q=40.7128,-74.0060&z=13&output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p class="widget-note">Explore our shop location and nearby event venue with the interactive map.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-column footer-about">
+                <h3>Bean Boutique Coffeeshop</h3>
+                <p>Curated coffees, brewing tools, and coffee experiences for every cup.</p>
+                <p class="footer-note">Order online, join an event, or discover new brew rituals today.</p>
+                <div class="footer-social" aria-label="Social media links">
+                    <a href="#" aria-label="Follow us on Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="Follow us on Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="Follow us on YouTube"><i class="bi bi-youtube"></i></a>
+                    <a href="#" aria-label="Follow us on TikTok"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-column footer-links">
+                <h4>Quick links</h4>
+                <a href="HomePage.html">Home</a>
+                <a href="CoffeeSelection.html">Coffee</a>
+                <a href="BrewingEquipment.html">Equipment</a>
+                <a href="Events_and_Workshops.html">Events</a>
+                <a href="Special_Offers_and_Subscriptions.html">Offers</a>
+                <a href="Shopping_Cart.html">Cart</a>
+            </div>
+        </div>
+        <p class="footer-copy-small">&copy; 2026 Bean Boutique. Crafted for coffee lovers.</p>
+    </footer>
+
+    <div class="signup-modal" id="signupModal" aria-hidden="true">
+        <div class="signup-modal-backdrop"></div>
+        <div class="signup-modal-panel" role="dialog" aria-modal="true" aria-labelledby="signupModalTitle">
+            <button class="signup-close" id="signupClose" aria-label="Close signup modal">×</button>
+            <div class="signup-content">
+                <h2 id="signupModalTitle">Welcome to Bean Boutique</h2>
+                <p>Get 15% off your first purchase when you join our coffee club.</p>
+                <form class="signup-form" id="signupForm">
+                    <label for="signupEmail">Enter your email</label>
+                    <input type="email" id="signupEmail" name="email" placeholder="you@example.com" required>
+                    <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                    <p class="secure-note">Sign-up secured with reCAPTCHA to protect customer data.</p>
+                    <p id="recaptchaNotice" class="secure-note" hidden></p>
+                    <p id="signupError" class="signup-error" role="alert" aria-live="polite"></p>
+                    <button type="submit">Claim my 15% off</button>
+                </form>
+                <p class="signup-subtext">No spam. Just fresh coffee offers and early access to events.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var signupModal = document.getElementById('signupModal');
+        var signupClose = document.getElementById('signupClose');
+        var signupForm = document.getElementById('signupForm');
+        var signupEmail = document.getElementById('signupEmail');
+        var signupError = document.getElementById('signupError');
+        var recaptchaNotice = document.getElementById('recaptchaNotice');
+        var runningOnLocalFile = window.location.protocol === 'file:';
+        var signupModalSeenKey = 'beanBoutiqueSignupModalSeen';
+
+        function hasSeenSignupModal() {
+            try {
+                return window.localStorage.getItem(signupModalSeenKey) === '1';
+            } catch (error) {
+                return window.__signupModalSeenFallback === true;
+            }
+        }
+
+        function markSignupModalSeen() {
+            try {
+                window.localStorage.setItem(signupModalSeenKey, '1');
+            } catch (error) {
+                window.__signupModalSeenFallback = true;
+            }
+        }
+
+        function showSignupModal() {
+            signupModal.classList.add('open');
+            signupModal.setAttribute('aria-hidden', 'false');
+            signupEmail.focus();
+        }
+
+        function closeSignupModal() {
+            signupModal.classList.remove('open');
+            signupModal.setAttribute('aria-hidden', 'true');
+            signupError.textContent = '';
+        }
+
+        function setRecaptchaNotice() {
+            if (!runningOnLocalFile) {
+                return;
+            }
+
+            recaptchaNotice.hidden = false;
+            recaptchaNotice.textContent = 'reCAPTCHA may show "Invalid domain" when opening this file directly. Run the site on localhost (for example with VS Code Live Server) to validate reCAPTCHA properly.';
+        }
+
+        signupClose.addEventListener('click', closeSignupModal);
+        signupModal.querySelector('.signup-modal-backdrop').addEventListener('click', closeSignupModal);
+
+        signupForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            var email = signupEmail.value.trim();
+            if (!email) return;
+
+            signupError.textContent = '';
+
+            if (!runningOnLocalFile) {
+                var token = '';
+                if (window.grecaptcha && typeof window.grecaptcha.getResponse === 'function') {
+                    token = window.grecaptcha.getResponse();
+                }
+
+                if (!token) {
+                    signupError.textContent = 'Please complete the reCAPTCHA challenge before submitting.';
+                    return;
+                }
+            }
+
+            closeSignupModal();
+
+            if (window.grecaptcha && typeof window.grecaptcha.reset === 'function') {
+                window.grecaptcha.reset();
+            }
+        });
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && signupModal.classList.contains('open')) {
+                closeSignupModal();
+            }
+        });
+
+        function initializeSignupModal() {
+            if (hasSeenSignupModal()) {
+                return;
+            }
+
+            markSignupModalSeen();
+            window.scrollTo(0, 0);
+            setTimeout(showSignupModal, 500);
+        }
+
+        if (document.readyState === 'complete') {
+            initializeSignupModal();
+        } else {
+            window.addEventListener('load', initializeSignupModal);
+        }
+
+        setRecaptchaNotice();
+
+        function initializeCatalogRowSliders() {
+            var sliders = document.querySelectorAll('[data-catalog-slider]');
+
+            sliders.forEach(function (slider) {
+                var rows = Array.from(slider.querySelectorAll('.catalog-row'));
+                var prevButton = slider.querySelector('.catalog-arrow.prev');
+                var nextButton = slider.querySelector('.catalog-arrow.next');
+                var activeIndex = 0;
+
+                if (!rows.length || !prevButton || !nextButton) {
+                    return;
+                }
+
+                function renderRow() {
+                    rows.forEach(function (row, index) {
+                        row.classList.toggle('active', index === activeIndex);
+                    });
+
+                    prevButton.disabled = activeIndex === 0;
+                    nextButton.disabled = activeIndex === rows.length - 1;
+                }
+
+                prevButton.addEventListener('click', function () {
+                    if (activeIndex > 0) {
+                        activeIndex -= 1;
+                        renderRow();
+                    }
+                });
+
+                nextButton.addEventListener('click', function () {
+                    if (activeIndex < rows.length - 1) {
+                        activeIndex += 1;
+                        renderRow();
+                    }
+                });
+
+                renderRow();
+            });
+        }
+
+        initializeCatalogRowSliders();
+
+        function initializeFeaturedSlider() {
+            var slider = document.querySelector('[data-featured-slider]');
+            if (!slider) return;
+
+            var slides = Array.from(slider.querySelectorAll('.featured-slide'));
+            var dots = Array.from(document.querySelectorAll('.featured-dot'));
+            var prevButton = slider.querySelector('.featured-arrow.prev');
+            var nextButton = slider.querySelector('.featured-arrow.next');
+            var activeIndex = 0;
+            var timer = null;
+
+            function renderSlide() {
+                slides.forEach(function (slide, index) {
+                    slide.classList.toggle('active', index === activeIndex);
+                });
+
+                dots.forEach(function (dot, index) {
+                    dot.classList.toggle('active', index === activeIndex);
+                });
+            }
+
+            function goToSlide(index) {
+                activeIndex = (index + slides.length) % slides.length;
+                renderSlide();
+                restartTimer();
+            }
+
+            function restartTimer() {
+                if (timer) {
+                    window.clearInterval(timer);
+                }
+                timer = window.setInterval(function () {
+                    goToSlide(activeIndex + 1);
+                }, 6000);
+            }
+
+            prevButton.addEventListener('click', function () {
+                goToSlide(activeIndex - 1);
+            });
+
+            nextButton.addEventListener('click', function () {
+                goToSlide(activeIndex + 1);
+            });
+
+            dots.forEach(function (dot, index) {
+                dot.addEventListener('click', function () {
+                    goToSlide(index);
+                });
+            });
+
+            slider.addEventListener('mouseenter', function () {
+                if (timer) {
+                    window.clearInterval(timer);
+                }
+            });
+
+            slider.addEventListener('mouseleave', function () {
+                restartTimer();
+            });
+
+            renderSlide();
+            restartTimer();
+        }
+
+        initializeFeaturedSlider();
+
+    </script>
+    <div id="oom_floating_cart">
+        <a aria-label="Floating Cart" href="Shopping_Cart.html" class="oom_float float_cart oom_right animate">
+            <span class="cart-count"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22"><g id="Icon_feather-shopping-bag" data-name="Icon feather-shopping-bag" transform="translate(-3.5 -2)"><path id="Path_6500" data-name="Path 6500" d="M7.5,3l-3,4V21a2,2,0,0,0,2,2h14a2,2,0,0,0,2-2V7l-3-4Z" transform="translate(0)" fill="none" stroke="#115740" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path id="Path_6501" data-name="Path 6501" d="M4.5,9h18" transform="translate(0 -2)" fill="none" stroke="#115740" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path id="Path_6502" data-name="Path 6502" d="M20.151,15A4.075,4.075,0,0,1,12,15" transform="translate(-2.575 -4.038)" fill="none" stroke="#115740" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></g></svg>
+        </a>
+    </div>
+    <div id="searchOverlay" class="hidden" aria-hidden="true">
+        <div class="search-panel" role="dialog" aria-modal="true" aria-labelledby="searchOverlayLabel">
+            <button type="button" class="search-close" aria-label="Close search">&times;</button>
+            <h2 id="searchOverlayLabel">Search Bean Boutique</h2>
+            <input id="siteSearchInput" type="search" placeholder="Search products or pages..." aria-label="Search products or pages">
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+    <script src="search.js"></script>
+</body>
+
+</html>
