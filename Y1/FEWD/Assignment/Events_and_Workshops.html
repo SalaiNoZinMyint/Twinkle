@@ -59,13 +59,13 @@
     <main class="page-content">
         <div class="announcement">Reserve your place for upcoming tastings, classes, and roaster events.</div>
 
-        <section class="feature-section">
+        <section id="events-catalog" class="feature-section">
             <div class="section-header">
                 <span>Events & workshops</span>
                 <h2>Upcoming coffee experiences</h2>
             </div>
             <div class="product-grid">
-                <article class="product-preview">
+                <article id="event-signature-tasting-session" class="product-preview">
                     <div class="product-image img-signature-tasting-session"></div>
                     <a href="#registration" class="product-copy">
                         <h2>Signature Tasting Session</h2>
@@ -73,7 +73,7 @@
                         <p class="product-description">Explore three single-origin coffees with guided tasting notes, aroma pairing tips, and brewing demos.</p>
                     </a>
                 </article>
-                <article class="product-preview">
+                <article id="event-brewing-masterclass" class="product-preview">
                     <div class="product-image img-brewing-masterclass"></div>
                     <a href="#registration" class="product-copy">
                         <h2>Brewing Masterclass</h2>
@@ -81,7 +81,7 @@
                         <p class="product-description">Hands-on training for pour-over, French press and espresso. Learn recipes, grind ratios and water control.</p>
                     </a>
                 </article>
-                <article class="product-preview">
+                <article id="event-meet-the-roaster" class="product-preview">
                     <div class="product-image img-meet-the-roaster"></div>
                     <a href="#registration" class="product-copy">
                         <h2>Meet the Roaster</h2>
@@ -89,7 +89,7 @@
                         <p class="product-description">Join our roaster for a behind-the-scenes conversation about sourcing beans, roast profiles, and flavour storytelling.</p>
                     </a>
                 </article>
-                <article class="product-preview">
+                <article id="event-latte-art-lab" class="product-preview">
                     <div class="product-image img-latte-art-lab"></div>
                     <a href="#registration" class="product-copy">
                         <h2>Latte Art Lab</h2>
@@ -196,14 +196,45 @@
             event.preventDefault();
             const firstName = document.getElementById('regFirstName').value.trim();
             const lastName = document.getElementById('regLastName').value.trim();
+            const email = document.getElementById('regEmail').value.trim();
             const eventName = document.getElementById('regEvent').value;
+            const guests = document.getElementById('regGuests').value;
             const message = document.getElementById('registrationMessage');
+            const reservationInbox = 'beanboutiqueevents@gmail.com';
 
-            if (!firstName || !lastName || !eventName) {
-                message.textContent = 'Please enter your first name, last name, and select an event.';
+            if (!firstName || !lastName || !email || !eventName || !guests) {
+                message.textContent = 'Please fill in all required fields before reserving your spot.';
                 message.style.color = '#b02a2a';
                 message.style.display = 'block';
                 return;
+            }
+
+            const subject = 'Event Reservation - ' + eventName;
+            const bodyLines = [
+                'Hello Bean Boutique Team,',
+                '',
+                'I would like to reserve my spot for an event.',
+                '',
+                'First Name: ' + firstName,
+                'Last Name: ' + lastName,
+                'Email: ' + email,
+                'Event: ' + eventName,
+                'Guests: ' + guests,
+                '',
+                'Thank you.'
+            ];
+            const body = bodyLines.join('\n');
+
+            const gmailComposeUrl = 'https://mail.google.com/mail/?view=cm&fs=1'
+                + '&to=' + encodeURIComponent(reservationInbox)
+                + '&su=' + encodeURIComponent(subject)
+                + '&body=' + encodeURIComponent(body);
+
+            const openedWindow = window.open(gmailComposeUrl, '_blank', 'noopener');
+            if (!openedWindow) {
+                window.location.href = 'mailto:' + encodeURIComponent(reservationInbox)
+                    + '?subject=' + encodeURIComponent(subject)
+                    + '&body=' + encodeURIComponent(body);
             }
 
             message.textContent = `Thank you, ${firstName} ${lastName}! Your spot for "${eventName}" is reserved.`;
